@@ -24,6 +24,9 @@ class Stream implements StreamInterface
         $this->isOpen = true;
     }
 
+    /**
+     * @throws IoException
+     */
     public function __destruct()
     {
         $this->close();
